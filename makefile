@@ -1,7 +1,5 @@
-#
 # Chronograph
 # Copyright (c) 2020 Jovan Lanik
-#
 
 # Makefile
 
