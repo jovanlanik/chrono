@@ -1,5 +1,5 @@
 # Chronograph
-# Copyright (c) 2020 Jovan Lanik
+# Copyright (c) 2022 Jovan Lanik
 
 # Makefile
 
@@ -7,12 +7,12 @@ NAME := chrono
 
 CFLAGS += -std=c11
 
-SRC = source.c
+SRC = $(wildcard *.c)
 OBJ = $(SRC:%.c=%.o)
 
 TRASH = $(OBJ) $(NAME)
 
-.PHONY: all clean
+.PHONY: all clean install uninstall
 
 all: $(NAME)
 clean:
